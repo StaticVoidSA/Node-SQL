@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
+        <title>Music Blog</title>
+    </head>
+    <body>
+        <div id='container'>
+            <header>
+                <h1 id="MainHeader">Music Blog</h1>
+            </header>
+            <nav>
+                <section>
+                    <p>Browse music  <a href='https://www.beatport.com'>Beatport</a>  <a href='https://www.juno.co.uk'>Juno</a></p>
+                </section>
+            </nav>
+            <main>
+                <aside>
+                    <h2>Post a Comment</h2><br />
+                    <h3>Tell us your favorite song and artist</h3>
+                    <form action="/comments" method="POST">
+                        <input type='text' name="name" placeholder="Please enter name" />
+                        <textarea rows="4" name="comment">Post your favorite song and artist...</textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                    <h1>User Comments</h2>
+                    <section id="suggestions">
+                        <!-- Populated by app.js -->
+                    </section>
+                </aside>
+                <article>
+                    <h2>All about the music...</h2>
+                    <h3>Food for your soul</h3>
+                    <p id="description">Music Blog is a mix of professional blogging with one's 
+                       music skills. A person who is good both at Blogging as well 
+                       as Music (or at least have a great deal of knowledge about music) 
+                       is called as a Music Blogger.</p>
+                    <img alt='music blog' src='https://www.heineken.com/ie/~/resources/heineken/ireland/liveyourmusic/new/key-visual-landing-page-1600-x-1600-px.jpg?v=20181212_134446&jq=60&process=backgrounddim|20&w=720&h=450&la=en-IE&hash=D38EEAB6BEAFE73A1302AF1C8D622EDC97F152AD' width='700' height='500' />
+                    <h3>There are so many genres you can write about:</h3>
+                    <ul>
+                        <li>House</li>
+                        <li>Dance</li>
+                        <li>Hip-Hop</li>
+                        <li>Rock</li>
+                        <li>Classical</li>
+                        <li>Pop</li>
+                        <li>EDM</li>
+                        <li>Dubstep</li>
+                        <li>Drum and Bass</li>
+                        <li>Trance</li>
+                        <li>Psy-Trance</li>
+                        <li>Techno</li>
+                    </ul>
+                    <h3>Fun facts about music</h3>
+                    <ul class='facts'>
+                        <li>You don't like the original version of a song because it's better. You like it because it's the one you heard first.</li>
+                        <li>Warner Music collected over US$2 million in royalties in 2008 for public usage of the "Happy Birthday" song.</li>
+                        <li>Your favorite song is probably your favorite because you associate it with an emotional event in your life.</li>
+                        <li>None of The Beatles Could Read Music.</li>
+                        <li>Your heartbeat changes and mimics the music you listen to.</li>
+                        <li>Flowers can grow faster by listening to music.</li>
+                        <li>Elvis Presley didn't write any of his songs.</li>
+                        <li>The type of music you listen to affects the way you perceive the world.</li>
+                        <li>Barry Manilow didn't write his song called "I write the songs".</li>
+                        <li>Leo Fender, inventor of the Telecaster and Stratocaster, could not play guitar. </li>
+                        <li>Musicians have the same life expectancy as Zimbabweans: the lowest on earth.</li>
+                        <li>The Beatles used to be called Johnny and the Moondogs.</li>
+                        <li>The world's longest concert goes so slow, it will last 639 years. </li>
+                        <li>The world's most expensive musical instrument, a Stradivarius violin, was sold in 2011 for US$15.9 million.</li>
+                        <li>The song Jingle Bells was originally written for Thanksgiving.</li>
+                        <li>Loud music can make a person drink more in less time. </li>
+                        <li>The original lyrics of the "Happy Birthday to You" song was "Good Morning to You".</li>
+                    </ul>
+                </article>
+            </main>
+            <footer>
+                <p>Developed by Jonathan Jenkins</p>
+            </footer>
+        </div>    
+    </body>
+</html>

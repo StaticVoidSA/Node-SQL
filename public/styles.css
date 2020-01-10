@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cantarell);
+
+/* Desktop Styles */
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+    body {
+        background-color: #400080;
+    }
+    #container {
+        background-color: #8000ff;
+        font-family: 'Cantarell', sans-serif;
+        width: 1550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header {
+        background-color:   #400080;
+        color: #e6ccff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px;
+        text-align: left;
+        line-height: 5em;
+        margin:0;
+    }
+    h2, h3 {
+        color:#1a0033;
+    }
+    aside {
+        width: 250px;
+        float: left;
+        padding-left: 50px;
+    }
+    article {
+        width: 800px;
+        float: right;
+    }
+    footer {
+        clear: both; 
+        text-align: center;
+    }
+    input, textarea {
+        display: block;
+        margin: 10px 0;
+    }
+    nav {
+        padding-left: 50px;
+    }
+    h1, h2, h3 {
+        margin-bottom: 3px;;
+    }
+    h3 {
+        margin-top: 5px;;
+    }
+    form {
+        margin-top: 10px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    #suggestions {
+        float: left;
+        clear: right;
+        color:#1a0033;
+        width: 360px;
+        margin: 10px 0;
+        background-color: #c2c2d6;
+        text-align: center;
+        display: block;
+    }
+    textarea {
+        font-family: 'Cantarell', sans-serif;
+        overflow-y: scroll;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .user {
+        color:#330099;
+        text-decoration: underline overline solid;
+    }
+    .comment {
+        color: #5500ff;
+        text-decoration: underline;
+    }
+    #description {
+        padding-right: 100px;
+    }
+    .facts {
+        padding-right: 100px;
+    }
+}
+
+
