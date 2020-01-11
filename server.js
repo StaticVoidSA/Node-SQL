@@ -56,7 +56,7 @@ app.post('/comments', (req, res) => {
             console.log("Error: " + err.message);
             res.status(400);
         } else {
-            res.status(200).redirect('default.html');
+            res.status(201).redirect('default.html');
         }
     });
     dbSelect();
