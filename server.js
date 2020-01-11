@@ -11,7 +11,7 @@ let db = new sqlite3.Database('./db/comments.db');
 function dbOpen() {
     db = new sqlite3.Database('./db/comments.db', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
-            console.log("Error with database: " + err);
+            console.log("Error with database: " + err.message);
         }
         else {
             console.log('Opening database connection...');
@@ -52,7 +52,7 @@ app.post('/comments', (req, res) => {
     dbOpen();
     db.run('INSERT INTO comments VALUES (?, ?)', [req.body.name, req.body.comment], (err) => {
         if (err) {
-            console.log("Error: " + err);
+            console.log("Error: " + err.message);
         } else {
             res.status(200).redirect('default.html');
         }
@@ -64,7 +64,7 @@ app.post('/comments', (req, res) => {
 // Start server
 app.listen(port, (err) => {
     if (err) {
-        console.log("Error starting server: " + err);
+        console.log("Error starting server: " + err.message);
     } 
     else {
         console.log(`Listening on PORT: ${port}`);
