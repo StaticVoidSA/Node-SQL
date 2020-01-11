@@ -40,6 +40,7 @@ app.get('/comments', (req, res) => {
     db.all('SELECT * FROM comments', (err, rows) => {
         if (err) {
             console.log('Error: ' + err.message);
+            res.status(400);
         }
         else {
             res.status(200).send(rows);
@@ -53,6 +54,7 @@ app.post('/comments', (req, res) => {
     db.run('INSERT INTO comments VALUES (?, ?)', [req.body.name, req.body.comment], (err) => {
         if (err) {
             console.log("Error: " + err.message);
+            res.status(400);
         } else {
             res.status(200).redirect('default.html');
         }
