@@ -56,11 +56,11 @@ app.post('/comments', (req, res) => {
             console.log("Error: " + err.message);
             res.status(400);
         } else {
+            console.log("Comment added to database"); 
             res.status(201).redirect('default.html');
         }
     });
     dbSelect();
-    console.log("Record added to database"); 
 });
 
 // Start server
