@@ -42,7 +42,7 @@ app.get('/comments', (req, res) => {
             console.log('Error: ' + err.message);
         }
         else {
-            res.send(rows);
+            res.status(200).send(rows);
         }
     });
 });
